@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.util.List;
 
 public class JpaMain {
     public static void main(String[] args) {
@@ -40,8 +41,29 @@ public class JpaMain {
             // * update
             // 객체에서 값만 바꿔도 되는 이유는 JPA가 관리해서 트랜잭션을
             // 커밋하는 시점에 다 체크해서 UPDATE 쿼리를 만들어서 날림 그 이후에 커밋
-            Member findMember = em.find(Member.class, 1L);
-            findMember.setName("HelloJPA");
+//            Member findMember = em.find(Member.class, 1L);
+//            findMember.setName("HelloJPA");
+
+            // 저장
+            Team team = new Team();
+            team.setName("TeamA");
+            em.persist(team);
+
+            Member member = new Member();
+            member.setUsername("member1");
+            member.setTeam(team);
+            em.persist(member);
+
+            // 영속성 컨텍스트 말고 DB에서 가져오는걸 보고싶을 때
+            em.flush();
+            em.clear();
+
+            Member findMember = em.find(Member.class, member.getId());
+            List<Member> members = findMember.getTeam().getMembers();
+
+            for (Member member1 : members) {
+                System.out.println("m = " + member.getUsername());
+            }
 
             tx.commit();
         } catch (Exception e) {
