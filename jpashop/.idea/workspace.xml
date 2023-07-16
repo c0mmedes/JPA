@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a936f295-c773-4bdc-939a-e4544c0469c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ex1-hello-jpa/ex1-hello-jpa/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/.idea/ex1-hello-jpa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/.idea/ex1-hello-jpa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/ex1-hello-jpa/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/ex1-hello-jpa/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/ex1-hello-jpa/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/ex1-hello-jpa/src/main/java/hellojpa/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/ex1-hello-jpa/src/main/java/hellojpa/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/ex1-hello-jpa/src/main/java/hellojpa/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -31,21 +39,21 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/SSAFY/SpringBootWithJPA/study/jpashop/src/main/java/jpabook/jpashop/domain",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/SSAFY/SpringBootWithJPA/study/ex1-hello-jpa&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="jpabook.jpashop.domain" />
@@ -87,6 +95,10 @@
       <option name="presentableId" value="Default" />
       <updated>1689254763817</updated>
       <workItem from="1689254764823" duration="2820000" />
+      <workItem from="1689351321653" duration="19000" />
+      <workItem from="1689398909078" duration="2000" />
+      <workItem from="1689403779686" duration="4009000" />
+      <workItem from="1689503707232" duration="4498000" />
     </task>
     <servers />
   </component>

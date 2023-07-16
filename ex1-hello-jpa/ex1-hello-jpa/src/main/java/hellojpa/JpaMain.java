@@ -23,47 +23,20 @@ public class JpaMain {
         // JPA의 모든 DATA 변경은 트랜잭션 안에서 실행
         // 단순 조회는 트랜잭션 필요 X
         try {
-            // * insert
-//            Member member = new Member();
-//            member.setId(1L);
-//            member.setName("HelloA");
-//            em.persist(member);
-
-            // * select
-//            Member findMember = em.find(Member.class, 1L);
-//            System.out.println("findMember.id = " + findMember.getId());
-//            System.out.println("findMember.name = " + findMember.getId());
-
-            // * delete
-//            Member findMember = em.find(Member.class, 1L);
-//            em.remove(findMember);
-
-            // * update
-            // 객체에서 값만 바꿔도 되는 이유는 JPA가 관리해서 트랜잭션을
-            // 커밋하는 시점에 다 체크해서 UPDATE 쿼리를 만들어서 날림 그 이후에 커밋
-//            Member findMember = em.find(Member.class, 1L);
-//            findMember.setName("HelloJPA");
-
-            // 저장
-            Team team = new Team();
-            team.setName("TeamA");
-            em.persist(team);
-
             Member member = new Member();
             member.setUsername("member1");
-            member.setTeam(team);
+
             em.persist(member);
 
-            // 영속성 컨텍스트 말고 DB에서 가져오는걸 보고싶을 때
-            em.flush();
-            em.clear();
+            // Team Insert
+            Team team = new Team();
+            team.setName("TeamA");
 
-            Member findMember = em.find(Member.class, member.getId());
-            List<Member> members = findMember.getTeam().getMembers();
+            // 권장하지않음
+            // 다대일 양방향 매핑 권장
+            team.getMembers().add(member);
 
-            for (Member member1 : members) {
-                System.out.println("m = " + member.getUsername());
-            }
+            em.persist(team);
 
             tx.commit();
         } catch (Exception e) {
